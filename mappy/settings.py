@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+ADMIN_DIR = os.path.join(BASE_DIR, "admin/")
+HOME_DIR = os.path.join(BASE_DIR, "home/")
 
 
 # Quick-start development settings - unsuitable for production
@@ -36,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
+    'about',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -76,7 +80,17 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
+# Media Files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
+# Collect All Static Files Here
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+# Serve All Static Files From
 STATIC_URL = '/static/'
+
+# App-External Static Files
+STATICFILES_DIRS = (
+    os.path.join(HOME_DIR, 'static/'),
+)
