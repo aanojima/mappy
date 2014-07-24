@@ -32,7 +32,7 @@ $(function(){
 	google.maps.event.addListener(map, "click", function(event){
 		if (isInfowindowOpen) return;
 		var lat = event.latLng.k;
-		var lng = event.latLng.A;
+		var lng = event.latLng.B;
 		var marker = new google.maps.Marker({
 			position: new google.maps.LatLng(lat, lng),
 			map: map,
