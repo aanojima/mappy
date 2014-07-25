@@ -1,0 +1,61 @@
+/********
+ MASTER.CSS
+
+color palette: http://www.colourlovers.com/palette/92095/Giant_Goldfish
+********/
+
+/* NAVBAR */
+
+.navbar {
+    /* depth */
+    z-index: 100;
+    /* size */
+    left: 0;
+    right: 0;
+    height: 50px;
+    /* background */
+    background-color: rgb(243,134,48);
+    /* text */
+    color: rgb(255,255,255);
+    /* decoration */
+    box-shadow: 0 0 2px rgb(0,0,0);
+}
+
+.top {
+    /* position */
+    position: absolute;
+    top: 0px;
+}
+
+.bottom {
+    /* position */
+    position: absolute;
+    bottom: 0px;
+}
+
+.sidebar {
+    /* depth */
+    z-index: 102;
+    /* size */
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    /* background */
+    background-color: rgb(254,254,254);
+    /* text */
+    color: rgb(0,0,0);
+    /* decoration */
+    box-shadow: 0 0 2px rgb(0,0,0);
+}
+
+.left {
+    /* position */
+    position: absolute;
+    left: 0;
+}
+
+.right {
+    /* position */
+    position: absolute;
+    right: 0;
+}

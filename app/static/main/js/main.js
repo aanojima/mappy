@@ -3,6 +3,8 @@ $(function(){
 	var map_canvas = document.getElementById('map-canvas');
 	var mapOptions = {
 		zoom: 15,
+        minZoom: 8,
+        disableDefaultUI: true
 	};
 	var map = new google.maps.Map(map_canvas, mapOptions);
 	if(navigator.geolocation) {
