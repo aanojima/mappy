@@ -1,5 +1,5 @@
 from django.contrib import admin
-from home.models import Annotation
+from app.models import Annotation
 
 # Register your models here.
 admin.site.register(Annotation)
