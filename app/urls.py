@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 
-from app import views
+from app import main_controller
 
 urlpatterns = patterns('',
-	url(r'^$', views.main, name='main')
+	url(r'^$', main_controller.index)
 )
